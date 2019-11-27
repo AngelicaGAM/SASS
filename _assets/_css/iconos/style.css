@@ -1,0 +1,930 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?auohda');
+  src:  url('fonts/icomoon.eot?auohda#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?auohda') format('truetype'),
+    url('fonts/icomoon.woff?auohda') format('woff'),
+    url('fonts/icomoon.svg?auohda#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-double-king-size-bed:before {
+  content: "\e9ad";
+}
+.icon-blogging:before {
+  content: "\e9ac";
+}
+.icon-nextlef:before {
+  content: "\e9a9";
+}
+.icon-arrow-right:before {
+  content: "\e9aa";
+}
+.icon-call-center-worker-with-headset:before {
+  content: "\e9ab";
+}
+.icon-click-gesture:before {
+  content: "\e9a8";
+}
+.icon-andanza:before {
+  content: "\e9a4";
+}
+.icon-Asociasion:before {
+  content: "\e9a5";
+}
+.icon-room:before {
+  content: "\e9a6";
+}
+.icon-hotelito:before {
+  content: "\e9a7";
+}
+.icon-frontal-bus-silhouette2:before {
+  content: "\e978";
+}
+.icon-complex:before {
+  content: "\e9a2";
+}
+.icon-ico-vuelos-beyond-01:before {
+  content: "\e9a3";
+}
+.icon-settings2:before {
+  content: "\e8b8";
+}
+.icon-add_shopping_cart:before {
+  content: "\e854";
+}
+.icon-done_all:before {
+  content: "\e877";
+}
+.icon-done:before {
+  content: "\e876";
+}
+.icon-home:before {
+  content: "\e88a";
+}
+.icon-shopping_cart:before {
+  content: "\e8cc";
+}
+.icon-rubbish-bin:before {
+  content: "\e975";
+}
+.icon-nextlef-01:before {
+  content: "\e92d";
+}
+.icon-luxurycars:before {
+  content: "\e9a0";
+}
+.icon-servicios-nauticos:before {
+  content: "\e9a1";
+}
+.icon-ic_add_shopping_cart_24px:before {
+  content: "\e99c";
+}
+.icon-ic_block_24px:before {
+  content: "\e99d";
+}
+.icon-ic_error_outline_24px:before {
+  content: "\e99e";
+}
+.icon-ic_highlight_off_24px:before {
+  content: "\e99f";
+}
+.icon-Discover .path1:before {
+  content: "\e979";
+  color: rgb(255, 255, 255);
+}
+.icon-Discover .path2:before {
+  content: "\e97a";
+  margin-left: -1.79296875em;
+  color: rgb(242, 110, 33);
+}
+.icon-Discover .path3:before {
+  content: "\e97b";
+  margin-left: -1.79296875em;
+  color: rgb(11, 22, 31);
+}
+.icon-Discover .path4:before {
+  content: "\e97c";
+  margin-left: -1.79296875em;
+  color: rgb(11, 22, 31);
+}
+.icon-Discover .path5:before {
+  content: "\e97d";
+  margin-left: -1.79296875em;
+  color: rgb(11, 22, 31);
+}
+.icon-Discover .path6:before {
+  content: "\e97e";
+  margin-left: -1.79296875em;
+  color: rgb(11, 22, 31);
+}
+.icon-Discover .path7:before {
+  content: "\e97f";
+  margin-left: -1.79296875em;
+  color: rgb(11, 22, 31);
+}
+.icon-Discover .path8:before {
+  content: "\e980";
+  margin-left: -1.79296875em;
+  color: rgb(11, 22, 31);
+}
+.icon-Discover .path9:before {
+  content: "\e981";
+  margin-left: -1.79296875em;
+  color: rgb(11, 22, 31);
+}
+.icon-Discover .path10:before {
+  content: "\e982";
+  margin-left: -1.79296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path11:before {
+  content: "\e983";
+  margin-left: -1.79296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path12:before {
+  content: "\e984";
+  margin-left: -1.79296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path13:before {
+  content: "\e985";
+  margin-left: -1.79296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path14:before {
+  content: "\e986";
+  margin-left: -1.79296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path15:before {
+  content: "\e987";
+  margin-left: -1.79296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path16:before {
+  content: "\e988";
+  margin-left: -1.79296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Discover .path17:before {
+  content: "\e989";
+  margin-left: -1.79296875em;
+  color: rgb(242, 110, 33);
+}
+.icon-Visa .path1:before {
+  content: "\e98a";
+  color: rgb(255, 255, 255);
+}
+.icon-Visa .path2:before {
+  content: "\e98b";
+  margin-left: -1.5810546875em;
+  color: rgb(60, 88, 191);
+}
+.icon-Visa .path3:before {
+  content: "\e98c";
+  margin-left: -1.5810546875em;
+  color: rgb(41, 54, 136);
+}
+.icon-Visa .path4:before {
+  content: "\e98d";
+  margin-left: -1.5810546875em;
+  color: rgb(60, 88, 191);
+}
+.icon-Visa .path5:before {
+  content: "\e98e";
+  margin-left: -1.5810546875em;
+  color: rgb(41, 54, 136);
+}
+.icon-Visa .path6:before {
+  content: "\e98f";
+  margin-left: -1.5810546875em;
+  color: rgb(60, 88, 191);
+}
+.icon-Visa .path7:before {
+  content: "\e990";
+  margin-left: -1.5810546875em;
+  color: rgb(41, 54, 136);
+}
+.icon-Visa .path8:before {
+  content: "\e991";
+  margin-left: -1.5810546875em;
+  color: rgb(60, 88, 191);
+}
+.icon-Visa .path9:before {
+  content: "\e992";
+  margin-left: -1.5810546875em;
+  color: rgb(41, 54, 136);
+}
+.icon-Visa .path10:before {
+  content: "\e993";
+  margin-left: -1.5810546875em;
+  color: rgb(255, 188, 0);
+}
+.icon-Visa .path11:before {
+  content: "\e994";
+  margin-left: -1.5810546875em;
+  color: rgb(247, 152, 29);
+}
+.icon-Visa .path12:before {
+  content: "\e995";
+  margin-left: -1.5810546875em;
+  color: rgb(237, 124, 0);
+}
+.icon-Visa .path13:before {
+  content: "\e996";
+  margin-left: -1.5810546875em;
+  color: rgb(5, 18, 68);
+}
+.icon-Visa .path14:before {
+  content: "\e997";
+  margin-left: -1.5810546875em;
+  color: rgb(5, 18, 68);
+}
+.icon-Visa .path15:before {
+  content: "\e998";
+  margin-left: -1.5810546875em;
+  color: rgb(5, 18, 68);
+}
+.icon-Visa .path16:before {
+  content: "\e999";
+  margin-left: -1.5810546875em;
+  color: rgb(5, 18, 68);
+}
+.icon-Visa .path17:before {
+  content: "\e99a";
+  margin-left: -1.5810546875em;
+  color: rgb(0, 90, 156);
+}
+.icon-Visa .path18:before {
+  content: "\e99b";
+  margin-left: -1.5810546875em;
+  color: rgb(250, 169, 41);
+}
+.icon-AMAV:before {
+  content: "\e972";
+}
+.icon-pago1:before {
+  content: "\ea7d";
+}
+.icon-pago2:before {
+  content: "\ea7e";
+}
+.icon-pago3:before {
+  content: "\ea7f";
+}
+.icon-Amdetour:before {
+  content: "\e9bc";
+}
+.icon-American-Express .path1:before {
+  content: "\e9bd";
+  color: rgb(39, 173, 228);
+}
+.icon-American-Express .path2:before {
+  content: "\e9be";
+  margin-left: -1.685546875em;
+  color: rgb(45, 120, 188);
+}
+.icon-American-Express .path3:before {
+  content: "\e9bf";
+  margin-left: -1.685546875em;
+  color: rgb(255, 255, 255);
+}
+.icon-American-Express .path4:before {
+  content: "\e9c0";
+  margin-left: -1.685546875em;
+  color: rgb(45, 120, 188);
+}
+.icon-American-Express .path5:before {
+  content: "\e9c1";
+  margin-left: -1.685546875em;
+  color: rgb(255, 255, 255);
+}
+.icon-ARDA:before {
+  content: "\e9c2";
+}
+.icon-CARE:before {
+  content: "\e9eb";
+}
+.icon-MAster-Card .path1:before {
+  content: "\ea39";
+  color: rgb(147, 27, 29);
+}
+.icon-MAster-Card .path2:before {
+  content: "\ea3a";
+  margin-left: -1.6572265625em;
+  color: rgb(241, 102, 34);
+}
+.icon-MAster-Card .path3:before {
+  content: "\ea3b";
+  margin-left: -1.6572265625em;
+  color: rgb(247, 152, 29);
+}
+.icon-MAster-Card .path4:before {
+  content: "\ea3c";
+  margin-left: -1.6572265625em;
+  color: rgb(203, 32, 38);
+}
+.icon-MAster-Card .path5:before {
+  content: "\ea3d";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path6:before {
+  content: "\ea3e";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path7:before {
+  content: "\ea3f";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path8:before {
+  content: "\ea40";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path9:before {
+  content: "\ea41";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path10:before {
+  content: "\ea42";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path11:before {
+  content: "\ea43";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path12:before {
+  content: "\ea44";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path13:before {
+  content: "\ea45";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MAster-Card .path14:before {
+  content: "\ea46";
+  margin-left: -1.6572265625em;
+  color: rgb(255, 255, 255);
+}
+.icon-Recurso-2 .path1:before {
+  content: "\ea47";
+  color: rgb(1, 75, 153);
+}
+.icon-Recurso-2 .path2:before {
+  content: "\ea48";
+  margin-left: -1.26171875em;
+  color: rgb(255, 255, 255);
+}
+.icon-Recurso-2 .path3:before {
+  content: "\ea49";
+  margin-left: -1.26171875em;
+  color: rgb(1, 75, 153);
+}
+.icon-Recurso-2 .path4:before {
+  content: "\ea4a";
+  margin-left: -1.26171875em;
+  color: rgb(1, 75, 153);
+}
+.icon-Security .path1:before {
+  content: "\ea4b";
+  color: rgb(255, 255, 255);
+}
+.icon-Security .path2:before {
+  content: "\ea4c";
+  margin-left: -3.7275390625em;
+  color: none;
+}
+.icon-Security .path3:before {
+  content: "\ea4d";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path4:before {
+  content: "\ea4e";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path5:before {
+  content: "\ea4f";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path6:before {
+  content: "\ea50";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path7:before {
+  content: "\ea51";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path8:before {
+  content: "\ea52";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path9:before {
+  content: "\ea53";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path10:before {
+  content: "\ea54";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path11:before {
+  content: "\ea55";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path12:before {
+  content: "\ea56";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path13:before {
+  content: "\ea57";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path14:before {
+  content: "\ea58";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path15:before {
+  content: "\ea59";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path16:before {
+  content: "\ea5a";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path17:before {
+  content: "\ea5b";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path18:before {
+  content: "\ea5c";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path19:before {
+  content: "\ea5d";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path20:before {
+  content: "\ea5e";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path21:before {
+  content: "\ea5f";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path22:before {
+  content: "\ea60";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path23:before {
+  content: "\ea61";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path24:before {
+  content: "\ea62";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path25:before {
+  content: "\ea63";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path26:before {
+  content: "\ea64";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path27:before {
+  content: "\ea65";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path28:before {
+  content: "\ea66";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path29:before {
+  content: "\ea67";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path30:before {
+  content: "\ea68";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path31:before {
+  content: "\ea69";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path32:before {
+  content: "\ea6a";
+  margin-left: -3.7275390625em;
+  color: rgb(93, 113, 127);
+}
+.icon-Security .path33:before {
+  content: "\ea6b";
+  margin-left: -3.7275390625em;
+  color: rgb(6, 110, 232);
+}
+.icon-Security .path34:before {
+  content: "\e900";
+  margin-left: -3.7275390625em;
+  color: rgb(6, 110, 232);
+}
+.icon-settings:before {
+  content: "\e960";
+}
+.icon-chichen-itza:before {
+  content: "\e961";
+}
+.icon-ico-alltheroom-beyond-01:before {
+  content: "\e962";
+}
+.icon-ico-callconcierge-beyond-01:before {
+  content: "\e963";
+}
+.icon-ico-cancelar-beyond-01:before {
+  content: "\e964";
+}
+.icon-ico-cerrar-01:before {
+  content: "\e973";
+}
+.icon-ico-edicion-beyond-01:before {
+  content: "\e965";
+}
+.icon-ico-esperar-beyond-01:before {
+  content: "\e966";
+}
+.icon-ico-habitacion-beyond-01:before {
+  content: "\e967";
+}
+.icon-ico-info-beyond:before {
+  content: "\e968";
+}
+.icon-ico-llave-beyond-01:before {
+  content: "\e969";
+}
+.icon-ico-menu-beyond:before {
+  content: "\e974";
+}
+.icon-ico-premium-beyond-01:before {
+  content: "\e96a";
+}
+.icon-ico-subvuelos-beyond-01:before {
+  content: "\e96b";
+}
+.icon-ico-user-beyond-01:before {
+  content: "\e96c";
+}
+.icon-ico-vermas-beyond-01:before {
+  content: "\e96d";
+}
+.icon-next:before {
+  content: "\e976";
+}
+.icon-scroll-arrow-to-down:before {
+  content: "\e977";
+}
+.icon-shopping-cart-12:before {
+  content: "\e96e";
+}
+.icon-stopwatch-1:before {
+  content: "\e96f";
+}
+.icon-ticket2:before {
+  content: "\e970";
+}
+.icon-beyond-01:before {
+  content: "\e93f";
+}
+.icon-Be-01:before {
+  content: "\e940";
+}
+.icon-ic_add_alert_black_24px:before {
+  content: "\e941";
+}
+.icon-ic_expand_less_black_24px:before {
+  content: "\e942";
+}
+.icon-ic_expand_more_black_24px:before {
+  content: "\e943";
+}
+.icon-ic_class_black_24px:before {
+  content: "\e944";
+}
+.icon-ic_mail_outline_black_24px:before {
+  content: "\e945";
+}
+.icon-ic_video_library_black_24px:before {
+  content: "\e946";
+}
+.icon-paper-plane:before {
+  content: "\e947";
+}
+.icon-ic_clear_24px:before {
+  content: "\e948";
+}
+.icon-golf:before {
+  content: "\e949";
+}
+.icon-ic_directions_bus_24px:before {
+  content: "\e94a";
+}
+.icon-ic_format_list_bulleted_24px:before {
+  content: "\e94b";
+}
+.icon-ic_local_car_wash_24px:before {
+  content: "\e94c";
+}
+.icon-ic_local_play_24px:before {
+  content: "\e94d";
+}
+.icon-ic_person_pin_24px:before {
+  content: "\e94e";
+}
+.icon-ic_work_24px:before {
+  content: "\e94f";
+}
+.icon-ic_directions_boat_24px:before {
+  content: "\e950";
+}
+.icon-ic_domain_24px:before {
+  content: "\e951";
+}
+.icon-ic_event_24px:before {
+  content: "\e952";
+}
+.icon-ic_local_activity_24px:before {
+  content: "\e953";
+}
+.icon-ic_local_airport_24px:before {
+  content: "\e954";
+}
+.icon-ic_update_24px:before {
+  content: "\e955";
+}
+.icon-medal:before {
+  content: "\e956";
+}
+.icon-dialogue:before {
+  content: "\e957";
+}
+.icon-ic_account_circle_black_24px:before {
+  content: "\e958";
+}
+.icon-ic_menu_24px:before {
+  content: "\e959";
+}
+.icon-ic_monetization_on_black_24px:before {
+  content: "\e95a";
+}
+.icon-ic_more_vert_black_24px:before {
+  content: "\e95b";
+}
+.icon-ic_power_settings_new_24px:before {
+  content: "\e95c";
+}
+.icon-shopping-cart-1:before {
+  content: "\e95d";
+}
+.icon-aeroplane-left-01:before {
+  content: "\e901";
+}
+.icon-aeroplane:before {
+  content: "\e902";
+}
+.icon-left-arrow:before {
+  content: "\e903";
+}
+.icon-map-marker:before {
+  content: "\e904";
+}
+.icon-gallery:before {
+  content: "\e905";
+}
+.icon-diving-mask:before {
+  content: "\e906";
+}
+.icon-sprout:before {
+  content: "\e907";
+}
+.icon-pyramid:before {
+  content: "\e908";
+}
+.icon-star:before {
+  content: "\e909";
+}
+.icon-bed:before {
+  content: "\e90a";
+}
+.icon-ic_place_black_24px:before {
+  content: "\e90b";
+}
+.icon-ic_expand_more_black_24px2:before {
+  content: "\e90c";
+}
+.icon-ic_expand_less_black_24px2:before {
+  content: "\e90d";
+}
+.icon-ic_delete_forever_black_24px:before {
+  content: "\e90e";
+}
+.icon-Recurso-1:before {
+  content: "\e90f";
+}
+.icon-Recurso-3:before {
+  content: "\e910";
+}
+.icon-Recurso-22:before {
+  content: "\e911";
+}
+.icon-ic_clear_black_24px:before {
+  content: "\e912";
+}
+.icon-ic_cancel_black_24px:before {
+  content: "\e913";
+}
+.icon-ic_add_circle_black_24px:before {
+  content: "\e914";
+}
+.icon-ic_date_range_black_24px:before {
+  content: "\e915";
+}
+.icon-ic_local_airport_black_24px:before {
+  content: "\e916";
+}
+.icon-ic_airport_shuttle_black_24px:before {
+  content: "\e917";
+}
+.icon-ic_golf_course_black_24px:before {
+  content: "\e918";
+}
+.icon-ic_mail_outline_black_24px2:before {
+  content: "\e919";
+}
+.icon-ic_account_circle_black_24px2:before {
+  content: "\e91a";
+}
+.icon-ic_attach_money_black_24px:before {
+  content: "\e91b";
+}
+.icon-ic_person_black_24px:before {
+  content: "\e91c";
+}
+.icon-ic_schedule_black_24px:before {
+  content: "\e91d";
+}
+.icon-ic_event_black_24px:before {
+  content: "\e91e";
+}
+.icon-telephone:before {
+  content: "\e91f";
+}
+.icon-golf2:before {
+  content: "\e920";
+}
+.icon-frontal-bus-silhouette:before {
+  content: "\e921";
+}
+.icon-mesage-go-01:before {
+  content: "\e922";
+}
+.icon-clock:before {
+  content: "\e923";
+}
+.icon-key-01:before {
+  content: "\e924";
+}
+.icon-concierge-01:before {
+  content: "\e925";
+}
+.icon-ship-1:before {
+  content: "\e926";
+}
+.icon-lock:before {
+  content: "\e927";
+}
+.icon-scroll-arrow-to-up2:before {
+  content: "\e928";
+}
+.icon-wall-clock:before {
+  content: "\e929";
+}
+.icon-building:before {
+  content: "\e92a";
+}
+.icon-magnifying-glass:before {
+  content: "\e92b";
+}
+.icon-mail:before {
+  content: "\e92c";
+}
+.icon-passage-of-time:before {
+  content: "\e92e";
+}
+.icon-kids-couple:before {
+  content: "\e92f";
+}
+.icon-standing-up-man:before {
+  content: "\e930";
+}
+.icon-phone-call:before {
+  content: "\e931";
+}
+.icon-medal2:before {
+  content: "\e932";
+}
+.icon-delivery-truck:before {
+  content: "\e933";
+}
+.icon-multiply:before {
+  content: "\e934";
+}
+.icon-scroll-arrow-to-down2:before {
+  content: "\e935";
+}
+.icon-location-pin:before {
+  content: "\e936";
+}
+.icon-calendar:before {
+  content: "\e937";
+}
+.icon-info-1:before {
+  content: "\e938";
+}
+.icon-ticket:before {
+  content: "\e939";
+}
+.icon-location-pointer:before {
+  content: "\e93a";
+}
+.icon-message:before {
+  content: "\e93b";
+}
+.icon-key:before {
+  content: "\e93c";
+}
+.icon-right-arrow:before {
+  content: "\e93d";
+}
+.icon-next2:before {
+  content: "\e93e";
+}
+.icon-cancel:before {
+  content: "\e95e";
+}
+.icon-escudo:before {
+  content: "\e95f";
+}
+.icon-paciente:before {
+  content: "\e971";
+}
