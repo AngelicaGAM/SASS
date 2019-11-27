@@ -1,0 +1,43 @@
+
+:root{
+	--azulito:rgb(0,193,186);
+	--marginLeft:0.8em;
+	--borderRadius:10px;
+	--width:20%;
+	--colorBoton:#fff;
+	--colorIcono:rgb(215,117,8);
+	--colorBeyond:#005464;
+	--colorBlanco:#fff;
+}
+.color-menu{
+    background-color: var(--colorBeyond) !important;
+}
+.nav-item{
+    cursor: grab;
+}
+.float-right {
+    float: left!important;
+    margin-left: 53%;
+}
+p.texto-menu {
+    color: white;
+    margin-bottom: 6px;
+    margin-top: -8px;
+    margin-left: -19px;
+}
+.navbar-light .navbar-brand{
+    color: var(--colorBlanco);   
+}
+.navbar-light .navbar-nav .nav-link{
+    color: var(--colorBlanco) !important;   
+}
+.inside {
+    color: var(--colorBlanco);
+    font-size: 1em;
+    top: calc(38%);
+    position: absolute;
+    text-indent: 10px;
+}
+.input {
+    text-indent: 20px;
+}
