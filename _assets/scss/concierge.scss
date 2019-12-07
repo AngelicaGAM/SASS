@@ -1,0 +1,335 @@
+@charset "utf-8";
+$font-stack: Helvetica,sans;
+$primary-color: #005464;
+$secondary-color: #F08D46;
+$hover-primary: rgba(0, 84, 100, 0.9);
+$txt-color: #ffffff;
+$color-barra: rgb(170, 133, 10);
+$color-claro: #02bdb6;
+$transition-all: all 0.5s ease;
+$fondo:rgb(244,244,244);
+$color-negro:rgba(0,0,0,1.00);
+
+
+#contenidoSube, body{
+    background:$txt-color;
+    font-size: 16px;
+}
+
+h1{
+	font-family:"proxima-nova",sans-serif;
+	font-size:60px;
+	font-style:normal;
+	font-weight:300;
+	color:$color-negro;
+	margin:0;
+	padding:0;
+}
+
+h2{
+	font-family:"proxima-nova",sans-serif;
+	font-size:30px;
+	font-style:normal;
+	font-weight:300;
+	color:$primary-color;
+	margin:0px;
+	padding:0px;
+}
+
+p{
+	font-family:"proxima-nova",sans-serif;
+	font-size:16px;
+	font-style:normal;
+	font-weight:300;
+	text-align:justify;
+	color:rgba(71,71,71,1.00);
+	margin-top:1.5em;
+	margin-bottom:0.5em;
+}
+
+
+#cajaReserva{
+	width:100%;
+	height:auto;
+	background:url(../_images/homeP/pattern-login-vip.jpg) repeat;
+	-webkit-box-shadow: 0px -2px 4px $color-negro;
+	-moz-box-shadow:    0px -2px 4px $color-negro;
+	box-shadow:         0px -2px 4px $color-negro;
+	z-index:10;
+	padding-top:1em;
+	padding-bottom:1em;
+
+	position:relative;
+	display:block;
+}
+
+.continidoReserva{
+	width:1022px;
+	/*width:1128px;*/
+	padding-left:1px;
+	padding-right:1px;
+	margin:0 auto;
+	height: auto;
+	overflow:hidden;
+}
+
+.textoE{
+	width:308px;
+	height:auto;
+	float:left;
+	margin-right:1.5em;
+}
+
+.imagenes{
+	width:300px;
+	height:1000px;
+	float:left;
+	margin-right:1.5em;
+	margin-top:1.5em;
+}
+
+.imagenes img{
+	margin:0.5em 0 0.5em 0;
+}
+
+p.punto{
+	margin-top:0.1em;
+	
+	margin-bottom:0.1em;
+}
+
+p.punto .marca{
+	color:$primary-color;
+	font-size:1.1em;
+	font-weight:600;
+}
+
+.listas{
+	width:660px;
+	float:left;
+	margin:1em;
+	overflow:hidden;
+}
+
+
+.lista{
+	margin:0.5em;
+	float:left;
+	line-height: 19px;
+	width:47%;
+	overflow:hidden;
+	font-size:21px;
+	
+}
+		
+.lista2{
+	margin:0.5em;
+	float:right;
+	width:47%;
+	overflow:hidden;
+	font-size:1.1em;
+	color:$primary-color;
+	font-weight:600;
+
+}
+
+
+
+.lista ul, .lista2 ul{
+	
+	
+
+	
+
+}
+
+.lista li, .lista2 li{
+	
+	margin:0.3em 0 0 1em;
+
+}
+	
+.lista li span, .lista2 li span{
+	
+
+}
+
+
+.telefonos{
+	width:100%;
+	display:block;
+	height:auto;
+	margin:0.5em 0 0.5em 0;
+	text-align:center;
+	
+}
+
+.tel{
+
+	border-left:1px solid $primary-color;
+	padding:0 0.5em 0 0.5em;
+	font-size:25px;
+	color:$color-negro;
+}
+
+.tel:first-child{
+	border-left:none;
+}
+
+.tel2{
+	font-size:28px;
+	color:$color-negro;
+	margin:0 0 0 0.5em;
+}
+
+img{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-right: 0px;
+}
+hr{
+	max-width: 100%;
+	align-self: center;
+	width: 500px;
+}
+.ex p{
+
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+
+.excelencia{
+	max-width: 100%;
+	margin-top: 30px;
+	font-family: Source Sans Pro, Regular;
+	font-size: 21px;
+	max-height: 115px;
+	max-width: 1013px;
+	text-align: justify;
+	color: $primary-color;
+}
+.excelenciaB{
+	max-width: 100%;
+	font-family: Source Sans Pro, Regular;
+	font-size: 22px;
+	max-height: 115px;
+	
+	max-width: 1013px;
+	text-align: justify;
+	color:rgba(0, 0, 0, 0.65);
+}
+.excelenciaC{
+	max-width: 100%;
+	font-family: Source Sans Pro, Regular;
+	font-size: 20px;
+	max-height: 115px;
+	max-width: 1013px;
+	
+	text-align: justify;
+color: $primary-color;
+}
+.Personalice{
+	max-width: 100%;
+	margin-top: 2rem;
+	font-family: Proxima Nova Condensed, Regular;
+	font-size: 2rem;
+	text-align: center;
+	color: $primary-color;
+}
+.PersonaliceB{
+	max-width: 100%;
+	margin-top: 50px;
+	font-family: Proxima Nova Condensed;
+	font-size: 22px;
+	text-align: center;
+	color: $primary-color;
+}
+.conciergelogo{
+    max-width: 100%;
+
+}
+.textServicio{
+	max-width: 100%;
+	font-family: Source Sans Pro, Light;
+	font-size: 22px;
+	max-height: 419px;
+	max-width: 1013px;
+	text-align: justify;
+	color: $primary-color;
+}
+
+.img{
+	max-width: 100%;
+	overflow:hidden;  
+	width: 1013px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-right: 0px;
+
+}
+
+.Imgx3{
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	width: 337.66667px;
+	height: 337.66667px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-right: 0px;
+	margin-top: 9px;
+}
+
+
+.DIV-ListaConcierge{
+	margin-top: 40px;
+	max-width: 100%;
+	width: 1013px;
+	height: 311.21px;
+	padding: 0px;
+
+	overflow:hidden;
+	color: $primary-color;
+	display: inline-block;
+}
+
+.listasConjuc{
+   max-width: 100%;
+   display: flex;
+   justify-content: space-between;
+   font-family: Source Sans Pro;
+   size: 22px;
+   padding: 1em;
+   margin: 0 auto;
+}
+.lista {
+	max-width: 100%;
+	font-family: Source Sans Pro;
+	
+ 	
+}
+
+.lista li  {
+   	max-width: 100%;
+	 list-style: none;
+	 color:$primary-color;
+
+}
+
+.lista li:before {
+  max-width: 100%;
+  content: "•";
+  font-size: 18px;
+  padding-right: 10px;
+  color: $color-barra;
+}
+
+
+

@@ -1,0 +1,69 @@
+$azul_letras_beyond: #005464;
+$negro: #000;
+$letras_beyond: "proxima-nova", sans-serif;
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+#logo{
+  padding: 1rem;
+  margin-bottom: -2.25rem;
+  
+}
+#imagenes{
+  border-bottom: 0.0625rem solid $azul_letras_beyond; 
+  border-top: 0.0625rem solid $azul_letras_beyond; 
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+}
+#imagen{
+  padding-top: 0.6%;
+}
+#numerosTel{  
+      padding: 1rem;
+      font-family: $letras_beyond;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $azul_letras_beyond;     
+      margin-bottom: 0rem;
+
+}
+#numerosTelOculto{  
+      margin-bottom: 0rem;
+      font-family: $letras_beyond;
+      font-size: 1rem;
+      font-weight: 700;
+      color: $azul_letras_beyond;     
+}
+
+#footerLink {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  @media screen and (min-width: $lg) {
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  div
+  {
+    padding-left:  0.1rem;
+    padding-right:  0.1rem;
+    text-align: center;
+    a{
+      
+      color: $negro;
+      font-family: $letras_beyond;
+      font-size: 0.75rem;
+      
+      @media screen and (min-width: $lg){
+        font-size: 1rem;    
+      }
+
+    }
+
+  }
+    
+
+}

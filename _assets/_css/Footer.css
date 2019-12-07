@@ -1,0 +1,47 @@
+#logo {
+  padding: 1rem;
+  margin-bottom: -2.25rem; }
+
+#imagenes {
+  border-top: 0.0625rem solid #005464;
+    padding-top: 1.4rem;
+    margin-top: 92px;
+    padding-bottom: 1.5rem;
+}
+
+#imagen {
+  padding-top: 0.6%; }
+
+#numerosTel {
+  padding: 1rem;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #005464;
+  margin-bottom: -1rem;}
+
+#numerosTelOculto {
+  margin-bottom: 0rem;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #005464; }
+
+#footerLink {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  @media screen and (min-width: 992px) {
+    #footerLink {
+      margin-left: 4.5rem;
+      margin-right: 4.5rem; } }
+  #footerLink div {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    text-align: center; }
+    #footerLink div a {
+      color: #000;
+      font-family: "proxima-nova", sans-serif;
+      font-size: 0.75rem; }
+      @media screen and (min-width: 992px) {
+        #footerLink div a {
+          font-size: 1rem; } }

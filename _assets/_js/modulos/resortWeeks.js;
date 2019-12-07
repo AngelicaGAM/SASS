@@ -1,0 +1,366 @@
+// JavaScript Document
+$(document).ready(function(e)
+{
+	/// get idioma
+	var idioma="";
+	$.ajax({
+				 url:"_assets/_controllers/getLang.php",
+				 data:{ page: "hotels"},
+				 type:"POST",
+				 dataType:"json",
+				 async:false,
+				 success: function(data){
+						idioma =eval(data);
+				 }
+	});
+			
+	/* calendario de reserva */
+	var calFecha= new Date();	
+	var hoy = new Date(calFecha.getFullYear(),calFecha.getMonth(),calFecha.getDate());
+
+	// Inicializa configuracion y control de calendarios
+	$("#checkIn").datepicker({
+			minDate : 2,
+			changeMonth : true,
+			numberOfMonths : 2,
+			dateFormat : 'dd-mm-yy',
+			// beforeShowDay: $.datepicker.noWeekends,
+			beforeShowDay: NoDates,
+			onClose : function(selectedDate){
+				$("#sd").val(selectedDate);
+				var ed=sumaFecha (7, selectedDate);
+				$("#ed").val(ed);
+			}
+	});
+
+	
+	/*
+	$(document).on("click",".destinoFF",function(e){
+		e.preventDefault();
+		var id=$(this).prop("id");
+		//var name=$(this).parent().find(".destName").text();
+		$("#destinosT").hide();
+		
+		$("#citycode").prop("value",id);
+		$("#destino").prop("value",name);
+		//var c =variables.claveC;
+		//$("#sort").val("start_desc");
+		$("#startDate").datepicker("setDate", "+15d");
+		$("#endDate").datepicker("setDate", "+18d");
+		//para forzar el limpiado de las variables de session.
+		$("#rooms").val(0);
+		$("#rooms").trigger('change');
+		$("#rooms").val(1);
+		$("#rooms").trigger('change');
+		$.ajax({
+					url:"_assets/_controllers/getDestinoNombre.php",
+					dataType:"text",
+					type:"POST",
+					data:{ clave:id }
+				}).done(function(data){
+					$("#destino").val(data);
+					//$("#search").trigger('click');
+					var last=$("#formHoteles").serializeArray();
+					$("#pest").hide();
+					$("#filtrosSection").hide();
+					$("#frame").show();
+					$("#listado").hide();
+					$("#listado").html("");
+					$(document).scrollTop( ($("#frame").offset().top-300) );
+					$.ajax({
+								url:"../_assets/_controllers/hotelProcesaBuscador.php",
+							 	type:"POST",
+							 	//dataType:"html",
+							 	data:{valueF :last}
+							}).done(function(data){ 
+								if(data==""){
+									$("#filtrosSection").hide();
+									$("#listado").show();
+									$("#listado").html("<h1>"+idioma.resultadosHoteles.error+"</h1>");
+									$("#destinosT").show();
+									$("#loading").hide();
+								}
+								else{
+										$("#destinosT").hide();
+										$("#filtrosSection").show();
+										$("#listado").show();
+										$("#listado").html(data);
+										$("#loading").hide();
+										paginacion();
+										// setSlider();
+									}
+					});
+
+		});
+	});
+	*/
+
+	$.ajax({
+				url:"_assets/_controllers/getFichasRW.php",
+				type:"POST",
+				dataType: "HTML"
+				}).done(function(data)
+				{ 
+					$("#destinosT").html(data);
+					carga_regiones();
+				});
+
+
+	//funcionamiento del boton de buscar	
+	$("#search").on("click",function()
+	{
+			$("#frameContent").hide();
+			$("#destinosT").hide();
+			$("#loading").show();
+			var ban=true;
+				
+			if($("#citycode").val()=="" && ban)
+			{
+				alert("CITY CODE "+idioma.buscador.valida1);
+				ban = false;
+			}
+				
+			if($("#startDate").val()=="" && ban)
+			{
+				alert("STAR DATE "+idioma.buscador.valida2);
+				ban=false;
+			}
+				
+				if($("#endDate").val()=="" && ban)
+				{
+						alert("END DATE "+idioma.buscador.valida3);
+						ban=false;
+				}
+				
+				if($("#rango").val()==0 && ban)
+				{
+					
+					alert("Select a option of B week");
+					ban=false;
+				}
+				if($("#rooms").val()==0 && ban)
+				{
+					alert("ROOMS "+idioma.buscador.valida4);
+					ban=false;
+				}
+				if($("#citycode").val()=="" && ban)
+				{
+					alert("CITY CODE 2 "+idioma.buscador.valida5);
+					ban=false;	
+				}
+				if(ban)
+				{
+					//var destino = $("#destino").val();
+					$("#sort").val("price_asc");
+					$("#viewprice").val(1);
+					
+					$("#ta").prop("value","buscador");
+					
+					//var last=$("#formHoteles").serialize();
+					//alert(last)
+					
+					var last=$("#FormBusqueda").serializeArray();
+					$("#pest").hide();
+					$("#filtrosSection").hide();
+					$("#frame").show();
+					$("#listado").hide();
+					$("#listado").html("");
+					
+					var  mes = calFecha.getMonth()+1;
+					var dia = calFecha.getDate();
+					if(mes>=1 && mes <=9)
+					{ mes ="0"+mes;}
+					if(dia>=1 && dia<=9)
+					{ dia="0"+dia; }
+					
+					var hoyCompara = dia+"-"+mes+"-"+calFecha.getFullYear();
+					
+					
+					if(hoyCompara ==$("#startDate").val())
+					{	
+						$("#alert").show();
+						$("#frame").hide();
+						$(document).scrollTop( $("#alert").offset().top -200);
+					
+						
+					}
+					else
+					{
+						
+						$("#frame").show();
+						$("#alert").hide();	
+						$(document).scrollTop( $("#loading").offset().top-100 ); 	
+					}
+					
+					
+					$(document).scrollTop( ($("#frame").offset().top-300) );  
+					var ua = navigator.userAgent.toLowerCase();
+					/*if(ua.indexOf('safari') > -1 && ua.indexOf('chrome')==-1 && ua.indexOf('crios')==-1  ) { 
+						
+						
+						var  dent3=window.open("carga.html","Carga2","directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no, width=1, height=1, top=2000");  	
+						 var dent=window.open("https://www.travelnet.com.mx/boxtravelnet/","ventana","directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no, width=1, height=1, top=2000"); 
+						var  dent2=window.open("carga.html","Carga","directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no, width=1, height=1, top=2000");  	
+						 
+						  	
+					  }  */
+					  
+					
+					$.ajax({
+									 // url:"../_assets/_controllers/hotelProcesaBuscador.php",
+									 url:"_assets/_controllers/hotelProcesaBuscador.php",
+									 type:"POST",
+									 //dataType:"html",
+									 data:{valueF :last}
+									 }).done(function(data){ 
+									
+										if(data=="")
+										{
+											//alert("Lo sentimos no se obtuvo resultados, intente cambiando la información de busqueda");	
+											//$("#muestraInfo").show();
+											//$("#resultadoLista").show();
+											$("#loading").hide();
+											$("#filtrosSection").hide();
+											$("#listado").show();
+											$("#listado").html("<h1>"+idioma.resultadosHoteles.error+"</h1>");
+											$("#loading").hide();
+										}
+										else
+										{
+											$("#destinosT").hide();
+											$("#filtrosSection").show();
+											$("#listado").show();
+											$("#listado").html(data);
+											$("#loading").hide();
+											//paginacion();
+											$(".holder").hide();
+											
+											// setSlider();
+											carga_manual($("#idPaisHidden").val(),$("#sd").val());
+											
+	
+										}
+					 });
+					
+					
+	 
+							
+					
+						
+				}
+	});
+
+	$(".regiones").mouseenter(function()
+	{
+		var id=$(this).attr("rel");
+		$.ajax({
+				url:"_assets/_controllers/getInfoTotalP.php",
+				type:"POST",
+				data:{id :id}
+				}).done(function(data)
+				{ 
+					$("#"+id).html(data);
+				});
+
+	});
+
+	//carga_regiones();
+// funcionamiento para realizar la paginacion	 
+function paginacion ()
+{
+	$("div.holder").jPages({
+			containerID : "fichasHoteles",
+					perPage :15,
+					midRange :6,
+					//previous :"← Anterior",
+					//next:"Siguiente →",
+					previous :idioma.anterior,
+					next:idioma.siguiente,
+					animation:"fadeIn",
+					
+					/*
+					callback : function( pages, items ){
+						//alert(pages.current);
+						startPage:pages.current
+						//if(items.count > 10){
+						//	$("#legend1").html("Page " + pages.current + " of " + pages.count);
+						//	$("#legend2").html(items.range.start + " - " + items.range.end + " of " + items.count);
+						//}else{
+						//	$("#legend1, #legend2").html('');
+						//}
+					
+					  }*/
+  
+				});
+				
+	}
+	
+function NoDates(date)
+{
+	var day = date.getDay();
+	// aqui indicamos el numero correspondiente a los dias que ha de bloquearse (el 0 es Domingo, 1 Lunes, etc...) 
+	return [(day != 1 && day != 2 && day != 3 && day != 4), ''];
+};
+
+function sumaFecha (d, fecha)
+{
+ var Fecha = new Date();
+ var sFecha = fecha || (Fecha.getDate() + "/" + (Fecha.getMonth() +1) + "/" + Fecha.getFullYear());
+ var sep = sFecha.indexOf('/') != -1 ? '/' : '-'; 
+ var aFecha = sFecha.split(sep);
+ var fecha = aFecha[2]+'/'+aFecha[1]+'/'+aFecha[0];
+ fecha= new Date(fecha);
+ fecha.setDate(fecha.getDate()+parseInt(d));
+ var anno=fecha.getFullYear();
+ var mes= fecha.getMonth()+1;
+ var dia= fecha.getDate();
+ mes = (mes < 10) ? ("0" + mes) : mes;
+ dia = (dia < 10) ? ("0" + dia) : dia;
+ var fechaFinal = dia+sep+mes+sep+anno;
+ return (fechaFinal);
+ }
+
+
+function carga_manual(id,fecha)
+{
+	$.ajax({
+				url:"_assets/_controllers/getInfoCargaManual.php",
+				type:"POST",
+				dataType: "HTML",
+				data:{id :id, fecha: fecha}
+				}).done(function(data)
+				{ 
+					$("#CManual").html(data);
+				});
+}
+
+function carga_regiones()
+{
+	$(".regiones").on("click",function()
+	{
+		var id=$(this).attr("rel");
+		$.ajax({
+				url:"_assets/_controllers/getSelectRegiones.php",
+				type:"POST",
+				dataType: "HTML",
+				data:{id :id}
+				}).done(function(data)
+				{ 
+					//	Muestra la Busqueda.
+					$(".Busqueda2").show();
+					$("#SelectCategoria").html(data);
+					$("#BusquedaPaises").bind("change",function()
+					{
+						var valor=$(this).val();
+						valor=valor.split("_");
+						console.log(valor[0]+" - "+valor[1]+" - "+valor[2]);
+						$("#d").val(valor[1]);
+						$("#dc").val(valor[2]);
+						$("#idPaisHidden").val(valor[3]);
+					});
+				});
+		carga_manual("","");
+	});
+
+}
+});

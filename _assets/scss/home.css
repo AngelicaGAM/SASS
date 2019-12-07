@@ -1,0 +1,36 @@
+.container-fluid.carr-be {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+figure.col-2.card {
+  margin-left: 1%; }
+
+.home-cuadros {
+  margin: auto;
+  padding: 0px;
+  margin-top: 2%; }
+
+figure.cuadros-be.card {
+  width: 30%;
+  margin: 0.7%;
+  display: inline-block;
+  padding: 0px 0px 0px 0px; }
+
+div#cards_container {
+  text-align: center; }
+
+@media (max-width: 770px) {
+  /*.container.home-cuadros{
+     display: none;
+  }*/
+  footer {
+    display: none; }
+
+  /* .container-fluid.carr-be{
+       display: none;
+   }*/ }
+@media (min-width: 1350px) {
+  figure.cuadros-be.card {
+    width: 18%; } }
+
+/*# sourceMappingURL=home.css.map */

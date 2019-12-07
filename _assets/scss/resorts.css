@@ -1,0 +1,296 @@
+.body {
+  font-family: "proxima-nova",sans-serif;
+  font-size: 16px; }
+
+h2 {
+  font-size: 1rem; }
+
+.ficha-rewards {
+  padding: 2%;
+  margin-top: 1rem;
+  border-radius: 1rem; }
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default; }
+
+.btn-book {
+  width: 50%;
+  float: right; }
+
+.apply-rw {
+  width: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+
+.select-resorts {
+  border-color: #02bdb6; }
+
+h2 {
+  text-align: center;
+  padding-top: 20px 0; }
+
+.color-rw-txt {
+  color: #005464; }
+
+.table-bordered {
+  border: 1px solid #ffffff !important; }
+
+table caption {
+  padding: .5em 0; }
+
+table tfoot tr td {
+  text-align: center !important; }
+
+.input.checkrw {
+  text-align: center; }
+
+.info {
+  border: 1px solid;
+  padding: 0.23rem; }
+
+.destinoRW {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer; }
+
+.fichasrw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto; }
+
+#Busqueda_Dos {
+  display: none; }
+
+.container.resorts {
+  margin: auto;
+  margin-top: 1.5rem; }
+
+.col-lg-3.col-md-3.col-sm-6.col-xs-6.destinoRW {
+  margin-bottom: 0.5rem;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.destinoFFFF {
+  border: 4px solid #F08D46;
+  border-radius: 0 15px 0 0;
+  position: relative; }
+
+.destinoFFFF img {
+  max-width: 100%;
+  border-radius: 0 10px 0px 0; }
+
+.destinoFFFF {
+  border: 4px solid #F08D46;
+  border-radius: 0 15px 0 0;
+  height: 80%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.nombreDestino {
+  background: #F08D46;
+  margin-top: -31px;
+  width: 80%;
+  padding: 0.2em;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 0.75em;
+  color: #fff;
+  z-index: 9999; }
+
+.moreInfo {
+  height: 20%;
+  background: #2b4b5a;
+  padding: 0.6em;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.vermas {
+  border: 1px solid #02bdb6;
+  padding: 0.2rem;
+  width: 50%;
+  text-align: center; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #02bdb6;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-radius: 0 10px 0px 0; }
+
+@media only screen and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block; }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  tr {
+    margin: 0 0 1rem 0; }
+
+  tr:nth-child(odd) {
+    background: #ffffff; }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+    padding-left: 50%; }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap; }
+
+  td:nth-of-type(1):before {
+    content: "Room type"; }
+
+  td:nth-of-type(2):before {
+    content: "Plan"; }
+
+  td:nth-of-type(3):before {
+    content: "Pax"; }
+
+  td:nth-of-type(4):before {
+    content: "Total"; }
+
+  td:nth-of-type(5):before {
+    content: "B-Rewards"; }
+
+  td:nth-of-type(6):before {
+    content: "Members"; }
+
+  td:nth-of-type(7):before {
+    content: "Apply B-Rewards"; } }
+.container.resort-card {
+  margin: auto; }
+
+.col-2.img-resorts {
+  padding-left: 0%;
+  padding-right: 0%; }
+
+.imgresorts {
+  width: 100%; }
+
+img.aling-img-card {
+  vertical-align: middle;
+  padding-left: 0%;
+  padding-right: 0%; }
+
+.btn-resorts {
+  border-color: #02bdb6;
+  background-color: #02bdb6; }
+
+.btn-resorts-na {
+  border-color: #F08D46;
+  background-color: #F08D46; }
+
+form.d-flex.justify-content-center.align-items-center {
+  margin: 1rem; }
+
+.datetxt {
+  border-bottom: 1px solid #F08D46; }
+
+.ficha-rw {
+  border-radius: 10px;
+  border: 1px solid #02bdb6;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem; }
+
+.txt-table {
+  padding: 1rem; }
+
+@media (max-width: 750px) {
+  button.btn.btn-primary.btn-resorts-na-g {
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    display: table; }
+
+  .ficha-rw {
+    margin-top: -1rem; }
+
+  img.aling-img-card {
+    vertical-align: middle;
+    padding: 2%;
+    padding-top: 0%; }
+
+  .btn-rw-book {
+    display: contents; }
+
+  .button.btn.btn-primary.btn-resorts-na-g {
+    width: 15rem; }
+
+  td:nth-child(7) {
+    text-align: center; } }
+@media (min-width: 750px) and (max-width: 1024px) {
+  .btn-resorts-na-g {
+    width: 18rem;
+    margin: auto;
+    margin-top: 2rem;
+    display: table; }
+
+  .btn-rw-book {
+    display: contents; }
+
+  td:nth-child(7) {
+    text-align: center; } }
+
+/*# sourceMappingURL=resorts.css.map */

@@ -1,0 +1,259 @@
+@charset "UTF-8";
+.formBuscador {
+  display: flex;
+  width: 50%;
+  margin: 15px auto;
+  justify-content: space-evenly; }
+
+.formBuscador > .group {
+  width: 70%; }
+
+.group {
+  border: 1px solid var(--azulito);
+  position: relative;
+  display: flex; }
+
+.inside {
+  color: #f08d46;
+  font-size: 1.2em;
+  top: calc(27%);
+  position: absolute;
+  text-indent: 10px; }
+
+.group select {
+  width: 100%; }
+
+.custom-select {
+  padding: 0px 0px 0px 44px !important; }
+
+.busquedabtn {
+  align-items: center;
+  background: #00c1ba;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding-left: 0 !important;
+  font-weight: bold;
+  width: 20%; }
+
+.dib {
+  background: white;
+  border-bottom: 1px dashed tomato; }
+
+.menu-fixed {
+  position: fixed !important;
+  top: 67px;
+  width: 100% !important;
+  z-index: 900 !important; }
+
+.bookPremium #contenedor {
+  margin-top: 1rem; }
+  .bookPremium #contenedor #colPrincipal {
+    overflow: hidden;
+    margin-right: -0.7rem;
+    margin-left: -0.7rem;
+    border: 0.125rem solid #00c1ba;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px; }
+    .bookPremium #contenedor #colPrincipal #destinoSemana {
+      background: #005464;
+      padding: 5px; }
+      .bookPremium #contenedor #colPrincipal #destinoSemana h2 {
+        margin: 0;
+        color: white;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 1.7rem; }
+    .bookPremium #contenedor #colPrincipal #imagenSemana {
+      padding: 0rem;
+      border-bottom: 10px solid #00c1ba;
+      position: relative; }
+      .bookPremium #contenedor #colPrincipal #imagenSemana img {
+        width: 100%;
+        height: auto; }
+      .bookPremium #contenedor #colPrincipal #imagenSemana .classMarcaAgua {
+        background: rgba(0, 55, 78, 0.7);
+        top: 10%;
+        right: 0;
+        position: absolute;
+        z-index: 40;
+        width: 130px;
+        height: 150px;
+        color: #ffffff;
+        padding: 5px;
+        text-align: center;
+        border-radius: 15px 0 0 15px; }
+        .bookPremium #contenedor #colPrincipal #imagenSemana .classMarcaAgua p {
+          font-size: 0.8rem;
+          margin-bottom: 5px; }
+        .bookPremium #contenedor #colPrincipal #imagenSemana .classMarcaAgua .icon-medal {
+          color: #fff;
+          font-size: 2.2rem; }
+    .bookPremium #contenedor #colPrincipal .nombreLugar {
+      margin: 8px 0px; }
+      .bookPremium #contenedor #colPrincipal .nombreLugar h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #00374e; }
+      .bookPremium #contenedor #colPrincipal .nombreLugar p {
+        text-align: right;
+        margin-bottom: 0; }
+    .bookPremium #contenedor #colPrincipal .priece {
+      width: 100%;
+      text-align: right;
+      margin: 0.5em 0 0 0;
+      display: block; }
+      .bookPremium #contenedor #colPrincipal .priece .priceSimbol {
+        font-size: 1.1em;
+        text-align: center;
+        color: #00374e; }
+      .bookPremium #contenedor #colPrincipal .priece .priceMount {
+        font-size: 1.9em;
+        font-weight: bold;
+        color: #00374e; }
+      .bookPremium #contenedor #colPrincipal .priece .pricemoneda {
+        font-size: 1em;
+        vertical-align: super;
+        color: #00374e; }
+    .bookPremium #contenedor #colPrincipal .box-price-week {
+      margin: 8px 0px;
+      background: #ececec;
+      margin: 5px 0px;
+      text-align: center; }
+      .bookPremium #contenedor #colPrincipal .box-price-week p {
+        margin-bottom: 0px;
+        color: #00374e;
+        font-size: .8em; }
+        .bookPremium #contenedor #colPrincipal .box-price-week p input[type="checkbox"] {
+          vertical-align: middle; }
+      .bookPremium #contenedor #colPrincipal .box-price-week .priece {
+        text-align: center;
+        margin: 0; }
+        .bookPremium #contenedor #colPrincipal .box-price-week .priece .priceMount {
+          font-size: 1.3em; }
+        .bookPremium #contenedor #colPrincipal .box-price-week .priece .pricemoneda {
+          font-size: .7em; }
+        .bookPremium #contenedor #colPrincipal .box-price-week .priece .priceSimbol {
+          font-size: .8em; }
+      .bookPremium #contenedor #colPrincipal .box-price-week .priceRewards {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #00374e; }
+    .bookPremium #contenedor #colPrincipal .detalle-book {
+      margin: 8px 0px; }
+      .bookPremium #contenedor #colPrincipal .detalle-book p {
+        text-align: center;
+        font-size: .8em;
+        margin-bottom: 0;
+        color: #00374e; }
+        .bookPremium #contenedor #colPrincipal .detalle-book p i {
+          cursor: pointer;
+          color: #f08d46; }
+    .bookPremium #contenedor #colPrincipal .bookNow {
+      margin: 8px 0px 0px 0px;
+      text-align: center; }
+      .bookPremium #contenedor #colPrincipal .bookNow .my-add-button {
+        display: block;
+        background: #f08d46;
+        max-width: 170px;
+        border-radius: 10px 10px 0px 0px;
+        color: #fff;
+        padding: 5px;
+        cursor: pointer; }
+        .bookPremium #contenedor #colPrincipal .bookNow .my-add-button:hover {
+          background: #00c1ba; }
+      .bookPremium #contenedor #colPrincipal .bookNow .detallepro {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px; }
+        .bookPremium #contenedor #colPrincipal .bookNow .detallepro span {
+          background: #005464;
+          padding: 7px;
+          width: 35px;
+          height: 35px;
+          border-radius: 20%;
+          color: #fff;
+          display: block;
+          font-size: 1.3rem;
+          cursor: pointer; }
+          .bookPremium #contenedor #colPrincipal .bookNow .detallepro span:hover {
+            color: #f08d46; }
+          .bookPremium #contenedor #colPrincipal .bookNow .detallepro span i {
+            vertical-align: middle;
+            display: block;
+            margin-top: 1px; }
+
+.listaContent {
+  margin: 0;
+  padding: 0; }
+  .listaContent li {
+    color: #005465;
+    line-height: 1.6em;
+    height: auto;
+    size: 1em;
+    list-style: none; }
+    .listaContent li:before {
+      max-width: 100%;
+      content: "•";
+      font-size: 1.6em;
+      padding-right: 0.3em;
+      color: #f08d46; }
+
+.galeriaWeek {
+  height: 100%; }
+
+#loading {
+  width: 230px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2em; }
+  #loading img {
+    width: 100%; }
+
+@media (max-width: 992px) {
+  .menu-fixed {
+    top: 106px; }
+
+  .bookPremium #contenedor #colPrincipal #imagenSemana .classMarcaAgua {
+    top: 5%;
+    height: 110px;
+    width: 145px; }
+
+  .bookPremium #contenedor #colPrincipal #imagenSemana .classMarcaAgua .icon-medal {
+    color: #fff;
+    font-size: 1.4rem; }
+
+  .bookPremium #contenedor #colPrincipal #imagenSemana .classMarcaAgua p {
+    font-size: 0.7rem; } }
+@media (max-width: 768px) {
+  .galeriaWeek {
+    height: auto;
+    width: 100%; }
+
+  .bookPremium #contenedor #colPrincipal .nombreLugar p, .bookPremium #contenedor #colPrincipal .priece, .nombreLugar {
+    text-align: center; }
+
+  .formBuscador {
+    width: 100%; }
+
+  .menu-fixed {
+    top: 77px; }
+
+  .bookPremium #contenedor #colPrincipal .nombreLugar h3 {
+    font-size: 1rem; }
+
+  .bookPremium #contenedor #colPrincipal .priece {
+    margin: 0; }
+
+  .bookPremium #contenedor #colPrincipal .priece .priceMount {
+    font-size: 1.4em; }
+
+  .bookPremium #contenedor #colPrincipal #destinoSemana h2 {
+    font-size: 1.5rem;
+    text-align: center; } }
+@media (max-width: 420px) {
+  .menu-fixed {
+    top: 49px; } }

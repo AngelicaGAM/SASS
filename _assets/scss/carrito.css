@@ -1,0 +1,208 @@
+#ladoB {
+  position: fixed;
+  float: right;
+  width: 330px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  /* height: 1723px; */
+  background-color: rgba(0, 52, 63, 0.95);
+  /* border-left: 1px solid #585858; */
+  z-index: 500;
+  z-index: 99999;
+  display: none; }
+  #ladoB .pesta {
+    float: right;
+    position: fixed;
+    top: 131px;
+    margin-top: 30px;
+    right: 10px;
+    z-index: 500;
+    margin-right: 260px;
+    cursor: pointer;
+    background-color: rgba(0, 52, 63, 0.95);
+    width: 29px;
+    height: 160px; }
+  #ladoB #cantidadcarro {
+    background: #f08d46;
+    color: #eee;
+    /* border-radius: 50%; */
+    /* float: left; */
+    font-size: 27px;
+    width: 33px;
+    text-align: center;
+    margin-left: -7px;
+    margin-top: 22px;
+    border: solid 2px #003d4c;
+    -webkit-box-shadow: 0 7px 7px -3px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 7px 7px -3px rgba(0, 0, 0, 0.18); }
+  #ladoB .tri {
+    float: left;
+    margin-left: -7px;
+    margin-top: -56px;
+    width: 7px;
+    height: 14px; }
+  #ladoB #iconocar {
+    margin: -44px 0 0 9px;
+    float: left;
+    width: auto;
+    height: auto; }
+  #ladoB #movsidebar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    float: right;
+    margin-right: -13px;
+    right: -7px; }
+  #ladoB #jcart {
+    position: relative;
+    float: right;
+    right: 15px;
+    margin: 0 auto; }
+  #ladoB #containerTodo {
+    width: auto;
+    display: block;
+    max-height: 466px;
+    overflow: hidden;
+    position: relative; }
+  #ladoB p {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    color: #474747;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  #ladoB .jcartws {
+    width: 318px; }
+  #ladoB #contador {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: -.1em;
+    margin-bottom: 0em; }
+
+#scMain {
+  position: relative;
+  float: left;
+  direction: ltr;
+  z-index: 0;
+  margin-top: 0.3em; }
+
+#scMain .scItem {
+  position: relative;
+  float: left;
+  width: 278px;
+  /* background-color: rgba(0, 52, 63, 0.95); */
+  padding: 4px;
+  left: 0px; }
+
+#scMain .scItem .todo {
+  margin-left: 31px; }
+
+.tituloTour {
+  font-size: 22px;
+  color: #fffeec;
+  /* text-shadow: 0.707px 0.707px 1px #090A0A; */ }
+
+.tituloElemento {
+  font-size: 16px;
+  color: #fffeec; }
+
+.separador {
+  border-bottom: 1px solid #807f84; }
+
+#scMain .scBlock {
+  width: 286px;
+  /* height: 75px; */
+  height: 22px;
+  position: relative;
+  float: left;
+  /* background-color: rgba(0, 52, 63, 1); */
+  margin-bottom: 5px;
+  left: 0px; }
+
+#scMain .scDelete {
+  position: relative;
+  float: right;
+  padding: 4px;
+  /* width: 270px; */
+  width: 16px;
+  z-index: 100; }
+
+#scMain .scDelete img {
+  float: right; }
+
+#scMain .scItem .division1 {
+  margin-left: 31px;
+  position: relative;
+  float: left;
+  width: 100px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: #fffeec;
+  font-size: 13px;
+  font-weight: bolder; }
+
+#scMain .scItem .division2 {
+  margin-left: 1px;
+  position: relative;
+  float: left;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: #fffeec;
+  font-size: 13px;
+  width: 115px; }
+
+.totalCarrito {
+  /* font-size: 30px; */
+  color: #fffeec;
+  height: auto;
+  left: 1em;
+  /* margin: 0 0 0 14em; */
+  position: relative;
+  top: 1.1em;
+  width: 76%; }
+
+.botonP {
+  width: 7em;
+  height: auto;
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6b988), color-stop(#f4ad75), color-stop(#f08d46), to(#cb7335));
+  background: linear-gradient(top, #f6b988, #f4ad75, #f08d46, #cb7335);
+  padding: 0.25em 2em 0.25em 2em;
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: "proxima-nova",sans-serif;
+  margin: 1em 1.4em 0 auto;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+  font-size: 1.25em;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-border-radius: 3px;
+  -moz-border-radiust: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px rgba(2, 2, 2, 0.3);
+  box-shadow: 0px 0px 3px rgba(2, 2, 2, 0.3); }
+
+.important {
+  color: #003d4c;
+  background: #f08d46;
+  padding: 30px;
+  text-align: justify;
+  margin-top: 4px;
+  margin-left: -30px;
+  width: 300px;
+  -webkit-box-shadow: 0 7px 7px -3px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 7px 7px -3px rgba(0, 0, 0, 0.18); }
+
+.tri2 {
+  float: left;
+  margin-left: -30px;
+  margin-top: 0px;
+  width: 15px;
+  height: 28px; }
+
+/*# sourceMappingURL=carrito.css.map */
